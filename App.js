@@ -1,7 +1,7 @@
 //AOS SCROLL ANIMATION
 AOS.init({
   duration: 1000,
-  once :true,
+  once: true,
   easing: "ease-out"
 });
 const sectionAbout = document.querySelector("section.section_hero");
@@ -10,15 +10,21 @@ const ancs = NAV.querySelectorAll(":scope > a");
 const header = document.querySelector("header");
 const nav = document.querySelector("nav");
 const navBAR = document.querySelector(".nav");
-const menuBtn  = document.querySelector(".menu")
-menuBtn.addEventListener('click',()=>{
+const menuBtn = document.querySelector(".menu")
+menuBtn.addEventListener('click', () => {
   navBAR.classList.toggle('show_links')
   navBAR.classList.toggle("change_color")
 })
 //PRELOADER ANIMATION
 const loader = document.querySelector(".loader")
-window.addEventListener("DOMContentLoaded",(e)=>{
+window.addEventListener("DOMContentLoaded", (e) => {
   loader.style.display = "none"
+})
+//ANCHOR TAG CLOSING MENU
+ancs.forEach(anc => {
+  anc.addEventListener('click', (e) => {
+    navBAR.classList.remove('show_links')
+  })
 })
 //NAVBAR SCROLL EFFECT
 const options = {
@@ -31,23 +37,38 @@ const observer = new IntersectionObserver((entries, observer) => {
         anc.style.color = "black";
         header.classList.add("nav_scrolled");
         navBAR.classList.add("nav_scrolled")
-        navBAR.style.boxShadow= "none"
-      }); 
-      
+        navBAR.style.boxShadow = "none"
+      });
+
     }
-    else{
+    else {
       ancs.forEach((anc) => {
-        anc.style.color = "white";
+        anc.style.color = "#fffff";
         header.classList.remove("nav_scrolled");
-        navBAR.style.boxShadow= "none"
+        navBAR.style.boxShadow = "none"
         navBAR.classList.remove("nav_scrolled")
       });
     }
   });
 }, options);
 observer.observe(sectionAbout);
-//ACTIVE LINKS  EFFECT
+//NAVIGATION MENU ACTIVE LINKS
+const sections = document.querySelectorAll('section[id]')
 
-console.log(window.screenY);
-
+function scrollActive() {
+  const scrollY = window.pageYOffset
+  sections.forEach(section => {
+    const sectionHeight = section.offsetHeight;
+    const sectionTop = section.offsetTop - 50;
+    let sectionId = section.getAttribute('id')
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      const link = document.querySelector('.nav a[href*=' + sectionId + ']')
+      link.style.color = "#ffd615"
+    } else {
+      const link = document.querySelector('.nav a[href*=' + sectionId + ']')
+      link.style.color = "#000000"
+    }
+  })
+}
+window.addEventListener('scroll', scrollActive)
 

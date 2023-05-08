@@ -5,12 +5,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PORTFOLIO</title>
+  <title>Religion Website</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" type="image/x-icon" href="/images/assets/logo1.png">
+
 </head>
 
-<body> 
+<body>
   <div class="loader">
     <div class="circle"></div>
   </div>
@@ -22,14 +24,14 @@
     <div class="container">
       <nav>
         <div class="nav">
-          <a href="">HOME</a></li>
-          <a href="">ABOUT</a>
-          <a href="">SERMONS</a>
-          <a href="">EVENTS</a>
-          <a href="">CAUSES</a>
-          <a href="">BLOG</a>
-          <a href="">PASTOR</a>
-          <a href="">CONTACT</a>
+          <a href="#home" class="active_link link">HOME</a></li>
+          <a href="#about" class="link">ABOUT</a>
+          <a href="#services" class="link">SERMONS</a>
+          <a href="#events" class="link">EVENTS</a>
+          <a href="#causes" class="link">CAUSES</a>
+          <a href="#blog" class="link">BLOG</a>
+          <a href="#pastor" class="link">PASTOR</a>
+          <a href="#contact" class="link">CONTACT</a>
         </div>
       </nav>
     </div>
@@ -43,8 +45,8 @@
     </div>
   </header>
   <img src="/Images/assets/img1.jpg" class="hero_image" alt="" />
-  <section class="section_hero" data-aos="fade-up">
-    <div class="hero_content" >
+  <section class="section_hero" data-aos="fade-up" id="home">
+    <div class="hero_content">
       <h3>CHRISTIAN CHURCH</h3>
       <h1>WE <span>LOVE</span> GOD, WE BELIEVE IN GOD</h1>
       <p>Lorem ipsum dolor sit amet consectetur s praesentium eaque ad reprehenderit laboriosam eligendi aliquid odio!
@@ -59,13 +61,12 @@
       <div class="dot next"></div>
     </div>
   </section>
-  <section class="section__about">
+  <section class="section__about" id="about">
     <div class="container__1">
-
       <div class="about__1">
         <img src="/Images/assets/church.jpg" alt="">
       </div>
-      <div class="about__2" data-aos="fade-up">
+      <div class="about__2" id="about" data-aos="fade-up">
         <h1>Welcome to <span>Christian</span> Church</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio culpa alias reiciendis eligendiicia
           consequuntur est quis tus non tempora o nihil repudiandae voluptates!</p>
@@ -88,7 +89,7 @@
         </ul>
       </div>
     </div>
-    <div class="container__2"data-aos="fade-up">
+    <div class="container__2" data-aos="fade-up">
       <div class="info">
         <img src="./Images/assets/multiple-users-silhouette.svg" alt="">
         <h2 class="info_num">98,057</h2>
@@ -146,7 +147,7 @@
       </div>
     </div>
   </section>
-  <section class="section__sermons sections" data-aos="fade-up">
+  <section class="section__sermons sections" id="services" data-aos="fade-up">
     <div class="services__1">
       <h3>SERVICES</h3>
       <h1>Christian Church Services</h1>
@@ -257,10 +258,9 @@
       </div>
     </div>
   </section>
-  <section class="section__events sections">
-    <div class="services__1" >
+  <section class="section__events sections" id="events">
+    <div class="services__1">
       <img src="./Images/assets/sander-crombach-B5a_mgBLBX8-unsplash.jpg" alt="">
-
     </div>
     <div class="services__2">
       <div class="heading" data-aos="fade-up">
@@ -268,7 +268,6 @@
         <h1>Upcoming Events</h1>
       </div>
       <div class="templates">
-
         <div class="template" data-aos="fade-up" data-aos-delay="100">
           <div class="img">
           </div>
@@ -360,9 +359,9 @@
           </div>
         </div>
       </div>
-    </div> 
+    </div>
   </section>
-  <section class="section__causes sections">
+  <section class="section__causes sections" id="causes">
     <div class="services__1" data-aos="fade-up">
       <h3>DONATE CHARITY</h3>
       <h1>Causes Need Our Help</h1>
@@ -371,10 +370,9 @@
     </div>
     <div class="services__2">
       <div class="cause" data-aos="fade-up" data-aos-delay="100">
-        <div class="img"> 
+        <div class="img">
         </div>
         <div class="cause_1">
-
           <h2>Health Care, Food</h2>
           <progress value="30"></progress>
           <h4>$80,000 Target / $55,000 Goal</h4>
@@ -386,7 +384,6 @@
         <div class="img">
         </div>
         <div class="cause_1">
-
           <h2>Health Care, Food</h2>
           <progress value="30"></progress>
           <h4>$80,000 Target / $55,000 Goal</h4>
@@ -398,7 +395,6 @@
         <div class="img">
         </div>
         <div class="cause_1">
-
           <h2>Health Care, Food</h2>
           <progress value="30"></progress>
           <h4>$80,000 Target / $55,000 Goal</h4>
@@ -410,7 +406,6 @@
         <div class="img">
         </div>
         <div class="cause_1">
-
           <h2>Health Care, Food</h2>
           <progress value="30"></progress>
           <h4>$80,000 Target / $55,000 Goal</h4>
@@ -427,7 +422,7 @@
         <button>Donate Now!</button>
       </div>
       <div class="bg_img">
-        <div class="content" >
+        <div class="content">
           <h1>Lorem ipsum dolor sit amet.</h1>
           <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
             blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
@@ -436,7 +431,7 @@
       </div>
     </div>
   </section>
-  <section class="section__blog sections">
+  <section class="section__blog sections" id="blog">
     <div class="services__1" data-aos="fade-up">
       <h3>BLOG</h3>
       <h1>Read The Latest Blog</h1>
@@ -515,7 +510,7 @@
       </div>
     </div>
   </section>
-  <section class="section__pastors sections">
+  <section class="section__pastors sections" id="pastor">
     <div class="services__1" data-aos="fade-up" data-aos-delay="400">
       <h3>PASTORS</h3>
       <h1>Church PASTORS</h1>
@@ -528,7 +523,8 @@
         <h2>Lloyd Wilson</h2>
         <p>LEAD PASTOR</p>
         <div class="icons">
-          <img src="/Images/assets/bxl-twitter.svg" alt="" data-aos="fade-up" data-aos-delay="50"><img src="/Images/assets/bxl-facebook.svg" alt="" data-aos="fade-up" data-aos-delay="100"><img
+          <img src="/Images/assets/bxl-twitter.svg" alt="" data-aos="fade-up" data-aos-delay="50"><img
+            src="/Images/assets/bxl-facebook.svg" alt="" data-aos="fade-up" data-aos-delay="100"><img
             src="/Images/assets/bxl-google-plus.svg" alt="" data-aos="fade-up" data-aos-delay="150">
           <img src="/Images/assets/bxl-instagram.svg" alt="" data-aos="fade-up" data-aos-delay="200">
         </div>
@@ -538,7 +534,8 @@
         <h2>Lloyd Wilson</h2>
         <p>LEAD PASTOR</p>
         <div class="icons">
-          <img src="/Images/assets/bxl-twitter.svg" alt="" data-aos="fade-up" data-aos-delay="50"><img src="/Images/assets/bxl-facebook.svg" alt="" data-aos="fade-up" data-aos-delay="100"><img
+          <img src="/Images/assets/bxl-twitter.svg" alt="" data-aos="fade-up" data-aos-delay="50"><img
+            src="/Images/assets/bxl-facebook.svg" alt="" data-aos="fade-up" data-aos-delay="100"><img
             src="/Images/assets/bxl-google-plus.svg" alt="" data-aos="fade-up" data-aos-delay="150">
           <img src="/Images/assets/bxl-instagram.svg" alt="" data-aos="fade-up" data-aos-delay="200">
         </div>
@@ -548,9 +545,10 @@
         <h2>Lloyd Wilson</h2>
         <p>LEAD PASTOR</p>
         <div class="icons">
-          <img src="/Images/assets/bxl-twitter.svg" alt="" data-aos="fade-up" data-aos-delay="50"><img src="/Images/assets/bxl-facebook.svg" alt="" data-aos="fade-up" data-aos-delay="100"><img
+          <img src="/Images/assets/bxl-twitter.svg" alt="" data-aos="fade-up" data-aos-delay="50"><img
+            src="/Images/assets/bxl-facebook.svg" alt="" data-aos="fade-up" data-aos-delay="100"><img
             src="/Images/assets/bxl-google-plus.svg" alt="" data-aos="fade-up" data-aos-delay="150">
-          <img src="/Images/assets/bxl-instagram.svg" alt="" data-aos="fade-up" data-aos-delay="200" >
+          <img src="/Images/assets/bxl-instagram.svg" alt="" data-aos="fade-up" data-aos-delay="200">
         </div>
       </div>
       <div class="pastor" data-aos="fade-up">
@@ -558,14 +556,15 @@
         <h2>Lloyd Wilson</h2>
         <p>LEAD PASTOR</p>
         <div class="icons">
-          <img src="/Images/assets/bxl-twitter.svg" alt="" data-aos="fade-up" data-aos-delay="50"><img src="/Images/assets/bxl-facebook.svg" alt="" data-aos="fade-up" data-aos-delay="100"><img
+          <img src="/Images/assets/bxl-twitter.svg" alt="" data-aos="fade-up" data-aos-delay="50"><img
+            src="/Images/assets/bxl-facebook.svg" alt="" data-aos="fade-up" data-aos-delay="100"><img
             src="/Images/assets/bxl-google-plus.svg" alt=" " data-aos="fade-up" data-aos-delay="150">
           <img src="/Images/assets/bxl-instagram.svg" alt="" data-aos="fade-up" data-aos-delay="200">
         </div>
       </div>
     </div>
   </section>
-  <section class="section__contact sections">
+  <section class="section__contact sections" id="contact">
     <div class="services__1" data-aos="fade-up">
       <h3>DONATE CHARITY</h3>
       <h1>Causes Need Our Help</h1>
@@ -573,12 +572,12 @@
         rem.</p>
     </div>
     <div class="services__2">
-      <div class="contact__form">
-        <input type="text" name="" id="" placeholder="Your Name" >
-        <input type="text" name="" id="" placeholder="Your Email" >
-        <input type="text" name="" id="" placeholder="Subject" >
-        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-        <button >Send Message</button>
+      <div class="contact__form" data-aos="fade-up">
+        <input type="text" placeholder="Your Name">
+        <input type="text" placeholder="Your Email">
+        <input type="text" placeholder="Subject">
+        <textarea cols="30" rows="10" placeholder="Message"></textarea>
+        <button>Send Message</button>
       </div>
       <div class="contact__address">
         <div class="address address1" data-aos="fade-up" data-aos-delay="100">
@@ -596,7 +595,7 @@
             <h2>Contact Number</h2>
           </div>
           <h4>+ 1235 2355 98</h4>
-        </div> 
+        </div>
         <div class="address" data-aos="fade-up" data-aos-delay="100">
           <div class="contact">
             <img src="./Images/assets/bxs-phone.svg" alt="">
@@ -606,7 +605,7 @@
           <h4>
             info@yoursite.com
           </h4>
-        </div> 
+        </div>
         <div class="address" data-aos="fade-up" data-aos-delay="100">
           <div class="contact">
             <img src="./Images/assets/bxs-phone.svg" alt="">
@@ -629,7 +628,7 @@
       </h1>
     </div>
     <div class="services__2">
-      <div class="img" data-aos="fade-up" data-aos-delay="200">  
+      <div class="img" data-aos="fade-up" data-aos-delay="200">
         <img src="./Images/assets/damien-checoury-03YfWDpHv40-unsplash.jpg" alt="" class="parent">
         <div class="insta">
           <img src="./Images/assets/bxl-instagram - white.svg" alt="" class="insta_img">
@@ -662,13 +661,13 @@
       </p>
       <div class="footer__social">
         <div class="footer__socials" data-aos="fade-up" data-aos-delay="100">
-          <img src="./Images/assets/bxl-facebook.svg" alt="" >
+          <img src="./Images/assets/bxl-facebook.svg" alt="">
         </div>
         <div class="footer__socials" data-aos="fade-up" data-aos-delay="200">
-          <img src="./Images/assets/bxl-instagram - white.svg" alt="" >
+          <img src="./Images/assets/bxl-instagram - white.svg" alt="">
         </div>
         <div class="footer__socials" data-aos="fade-up" data-aos-delay="300">
-          <img src="./Images/assets/bxl-twitter.svg" alt="" >
+          <img src="./Images/assets/bxl-twitter.svg" alt="">
         </div>
       </div>
     </div>
@@ -790,7 +789,7 @@
   </footer>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-  
+
   </script>
   <script src="./App.js"></script>
 </body>

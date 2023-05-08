@@ -9,6 +9,9 @@
   --ter-font: sans-serif;
   --heading-size: 2rem;
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +21,7 @@ body {
   overflow-x: hidden;
 }
 /***********************LOADER*********************/
-.loader{
+.loader {
   position: fixed;
   top: 0;
   left: 0;
@@ -27,7 +30,7 @@ body {
   height: 100vh;
   background-color: var(--white);
 }
-.loader .circle{
+.loader .circle {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -39,19 +42,19 @@ body {
   border-radius: 2rem;
   animation: spinner 1.25s linear infinite;
 }
-@-webkit-keyframes spinner{
-  0%{
+@-webkit-keyframes spinner {
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
-@keyframes spinner{
-  0%{
+@keyframes spinner {
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -102,7 +105,7 @@ header nav {
   z-index: 10000;
 }
 .nav_scrolled {
-  background-color:var(--white);
+  background-color: var(--white);
   box-shadow: 0 2px 2px 0px rgb(245, 245, 245);
   color: black;
 }
@@ -150,6 +153,9 @@ nav a:hover::after {
   background-color: var(--gray);
   margin: 3px 6px;
 }
+.active_link {
+  color: var(--pr-clr);
+}
 /*********************TABLET & DESKTOP*******************/
 @media screen and (min-width: 600px) {
   header {
@@ -174,7 +180,7 @@ nav a:hover::after {
 @media screen and (min-width: 990px) {
   header {
     background-color: transparent;
-    height:12vh;
+    height: 12vh;
   }
   header nav {
     width: 100%;
@@ -354,7 +360,7 @@ section {
 }
 .section__about .container__1 {
   width: 90%;
-  margin:  auto;
+  margin: auto;
 }
 .section__about ul {
   color: var(--gray);
@@ -438,11 +444,11 @@ section {
     padding: 0 2rem 2rem;
   }
 }
- @media screen and (min-width:990px){
+@media screen and (min-width: 990px) {
   .section__about .about__2 {
-    margin-top: 5rem
-    ;}
-} 
+    margin-top: 5rem;
+  }
+}
 .sections {
   padding: 7rem 0;
   text-align: center;
@@ -739,7 +745,7 @@ section {
     z-index: -10;
   }
   .section__events .services__2 {
-    margin-top: -20rem;
+    margin-top: -35rem;
   }
   .section__events .templates {
     display: grid;
@@ -1107,10 +1113,10 @@ h4 {
     width: 90%;
     height: 70vh;
   }
-.section__contact .contact__address {
-padding-top: 0;
-margin: 1rem 0;
-}
+  .section__contact .contact__address {
+    padding-top: 0;
+    margin: 1rem 0;
+  }
   .section__contact .contact__address {
     display: inline-block;
     float: left;
@@ -1131,10 +1137,9 @@ margin: 1rem 0;
     text-align: left;
     float: right;
     margin: 1rem auto 0 auto;
-    /* height: 72vh; */
     width: 54%;
   }
-  .section__contact .contact__form button{
+  .section__contact .contact__form button {
     width: fit-content;
     margin-left: 1rem;
     cursor: pointer;
@@ -1142,7 +1147,7 @@ margin: 1rem 0;
 }
 .section__gallery .services__2 {
   width: 90%;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 .section__gallery .parent {
   cursor: zoom-in;
@@ -1174,7 +1179,7 @@ margin: 1rem 0;
   background-color: #ffd615;
 }
 .section__gallery .parent:hover + .insta {
- opacity: 1;
+  opacity: 1;
 }
 @media screen and (min-width: 768px) {
   .section__gallery .services__2 {
@@ -1182,7 +1187,7 @@ margin: 1rem 0;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-between;
   }
-  .section__gallery .parent{
+  .section__gallery .parent {
     width: 90%;
   }
   .section__gallery img {
@@ -1192,7 +1197,7 @@ margin: 1rem 0;
 @media screen and (min-width: 990px) {
   .section__gallery .services__2 {
     margin-top: 5rem;
-width: 100%;
+    width: 100%;
   }
 }
 footer {

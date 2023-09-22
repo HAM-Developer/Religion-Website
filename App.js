@@ -1,6 +1,6 @@
 //AOS SCROLL ANIMATION
 AOS.init({
-  duration: 1000,
+  duration: 600,
   once: true,
   easing: "ease-out"
 });
